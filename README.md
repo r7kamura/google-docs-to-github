@@ -1,6 +1,6 @@
 # google-docs-to-github
 
-Custom action to export Google Docs from Google Drive to GitHub.
+Custom action to export Google Docs to GitHub.
 
 This action exports docs directly under the specified folder on Google Drive,
 convert them into JSON files that contain HTML body and some metadata such as their title and creation datetime,
