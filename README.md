@@ -49,11 +49,12 @@ jobs:
 
 GitHub branch name where files will be pushed.
 
-- required: false
-- default: data
+- optional
+- default: `"data"`
 
 ### `google_drive_folder_id`
 
 ID of the Google Drive folder to be exported. Folder ID is contained in the trailing part of the folder's URL.
 
 - required
+- example: `"1zD5A9LcT1aHz5_R_eXvikWy1l7SGcjH_"`
