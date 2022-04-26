@@ -21,7 +21,10 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: google-github-actions/auth@v0
+        with:
+          service_account: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          workload_identity_provider: ${{ secrets.GOOGLE_WORKLOAD_IDENTITY_PROVIDER }}
       - uses: r7kamura/google-docs-to-github@main
         with:
           google_drive_folder_id: 1zD5A9LcT1aHz5_R_eXvikWy1l7SGcjH_
