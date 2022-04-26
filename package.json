@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "lint": "npx prettier --write ."
+  },
+  "dependencies": {
+    "@actions/core": "^1.7.0",
+    "googleapis": "^68.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
+}

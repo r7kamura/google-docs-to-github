@@ -5,10 +5,8 @@ inputs:
     description: ID of the Google Drive folder to be exported.
     required: true
 runs:
-  using: docker
-  image: Dockerfile
-  args:
-    - ${{ inputs.google_drive_folder_id }}
+  using: node16
+  main: index.js
 branding:
   color: blue
   icon: download-cloud

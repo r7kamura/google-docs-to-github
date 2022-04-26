@@ -32,5 +32,5 @@ jobs:
 ### `google_drive_folder_id`
 
 - ID of the Google Drive folder to be exported.
-    - You can get it from its URL by accessing the folder.
+  - You can get it from its URL by accessing the folder.
 - required
