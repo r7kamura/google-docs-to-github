@@ -7,7 +7,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: .github/actions/google-docs-to-local.yml
+    - uses: .github/actions/google-docs-to-local
       with:
         google_drive_folder_id: ${{ inputs.google_drive_folder_id }}
     - uses: peaceiris/actions-gh-pages@v3
