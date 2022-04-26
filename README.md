@@ -11,9 +11,6 @@ This is an example workflow to export docs daily at 00:00 (GMT).
 name: import
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: "0 0 * * *"
 
