@@ -5,8 +5,16 @@ inputs:
     description: ID of the Google Drive folder to be exported.
     required: true
 runs:
-  using: node16
-  main: dist/index.js
+  using: composite
+  steps:
+    - uses: .github/actions/google-docs-to-local.yml
+      with:
+        google_drive_folder_id: ${{ inputs.google_drive_folder_id }}
+    - uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ github.token }}
+        publish_branch: data
+        publish_dir: output
 branding:
   color: blue
   icon: download-cloud
