@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.2.0 - 2022-04-27
+
 ### Added
 
 - Add `inputs.github_branch`.
