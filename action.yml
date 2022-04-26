@@ -12,7 +12,6 @@ runs:
         google_drive_folder_id: ${{ inputs.google_drive_folder_id }}
     - uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ github.token }}
         publish_branch: data
         publish_dir: output
 branding:
