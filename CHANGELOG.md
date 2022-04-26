@@ -10,6 +10,7 @@
 ### Changed
 
 - Change default `github_directory` from `output` to `google_docs`.
+- Change default `github_branch` from `data` to `main`.
 
 ### Fixed
 

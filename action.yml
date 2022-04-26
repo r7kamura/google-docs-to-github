@@ -4,7 +4,7 @@ inputs:
   github_branch:
     description: GitHub branch name where files will be pushed.
     required: false
-    default: data
+    default: main
   github_directory:
     description: GitHub directory path where files will be pushed.
     required: false

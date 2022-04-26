@@ -50,7 +50,7 @@ jobs:
 GitHub branch name where files will be pushed.
 
 - optional
-- default: `"data"`
+- default: `"main"`
 
 ### `github_directory`
 
