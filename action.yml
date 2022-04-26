@@ -21,6 +21,7 @@ runs:
     - uses: peaceiris/actions-gh-pages@v3
       with:
         destination_dir: ${{ inputs.github_directory }}
+        disable_nojekyll: true
         github_token: ${{ github.token }}
         publish_branch: ${{ inputs.github_branch }}
         publish_dir: output
