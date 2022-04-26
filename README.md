@@ -2,9 +2,9 @@
 
 Custom action to export Google Docs to GitHub.
 
-This action exports docs directly under the specified folder on Google Drive,
+This action searches docs in the specified folder on Google Drive,
 convert them into JSON files that contain HTML body and some metadata such as their title and creation datetime,
-then push them to GitHub repository.
+then push them to the GitHub repository.
 
 ## Set up
 
@@ -38,7 +38,7 @@ jobs:
         with:
           service_account: my-service-account-id@my-project-id.iam.gserviceaccount.com
           workload_identity_provider: projects/my-project-id/locations/global/workloadIdentityPools/my-pool-id/providers/my-provider-id
-      - uses: r7kamura/google-docs-to-github@main
+      - uses: r7kamura/google-docs-to-github@v0
         with:
           google_drive_folder_id: 1zD5A9LcT1aHz5_R_eXvikWy1l7SGcjH_
 ```
