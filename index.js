@@ -14,9 +14,9 @@ async function main() {
 
   const files = await listFiles({ drive, folderId });
 
-  const directoryName = "output";
+  const directoryPath = "output";
 
-  await createDirectory({ directoryName });
+  await createDirectory({ directoryPath });
 
   files.forEach(async (file) => {
     const html = await exportFile({
@@ -34,10 +34,10 @@ async function main() {
   });
 }
 
-async function createDirectory({ directoryName }) {
-  await fsPromises.stat(directoryName).catch((err) => {
+async function createDirectory({ directoryPath }) {
+  await fsPromises.stat(directoryPath).catch((err) => {
     if (err.code === "ENOENT") {
-      fsPromises.mkdir(directoryName);
+      fsPromises.mkdir(directoryPath);
     }
   });
 }
