@@ -45,8 +45,15 @@ jobs:
 
 ## Inputs
 
+### `github_branch`
+
+GitHub branch name where files will be pushed.
+
+- required: false
+- default: data
+
 ### `google_drive_folder_id`
 
-- ID of the Google Drive folder to be exported.
-  - You can get it from its URL by accessing the folder.
+ID of the Google Drive folder to be exported. Folder ID is contained in the trailing part of the folder's URL.
+
 - required

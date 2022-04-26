@@ -1,6 +1,10 @@
 name: google-docs-to-github
 description: Export Google Docs to GitHub.
 inputs:
+  github_branch:
+    description: GitHub branch name where files will be pushed.
+    required: false
+    default: data
   google_drive_folder_id:
     description: ID of the Google Drive folder to be exported.
     required: true
@@ -13,7 +17,7 @@ runs:
     - uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ github.token }}
-        publish_branch: data
+        publish_branch: ${{ inputs.github_branch }}
         publish_dir: output
 branding:
   color: blue
