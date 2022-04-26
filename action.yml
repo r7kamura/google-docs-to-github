@@ -1,5 +1,5 @@
 name: google-docs-to-github
-description: Export Google Docs from Google Drive folder to your GitHub repository.
+description: Export Google Docs from Google Drive to GitHub.
 inputs:
   google_drive_folder_id:
     description: ID of the Google Drive folder to be exported.

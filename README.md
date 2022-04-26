@@ -1,6 +1,20 @@
 # google-docs-to-github
 
-GitHub Action to export Google Docs from Google Drive folder to your GitHub repository.
+Custom action to export Google Docs from Google Drive to GitHub.
+
+This action exports docs directly under the specified folder on Google Drive.
+
+## Set up
+
+We recommend that you create a new service account on Google Cloud for this action, share the Google Drive folder with this account,
+and authenticate to Google Cloud by using [google-github-actions/auth](https://github.com/google-github-actions/auth),
+that automatically set up `GOOGLE_APPLICATION_CREDENTIALS` environment variable to access Google Drive API.
+
+This action requires at least one of the following authorization scopes for accessing Google Drive API:
+
+- `https://www.googleapis.com/auth/drive`
+- `https://www.googleapis.com/auth/drive.file`
+- `https://www.googleapis.com/auth/drive.readonly`
 
 ## Usage
 
@@ -20,8 +34,8 @@ jobs:
     steps:
       - uses: google-github-actions/auth@v0
         with:
-          service_account: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
-          workload_identity_provider: ${{ secrets.GOOGLE_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: my-service-account-id@my-project-id.iam.gserviceaccount.com
+          workload_identity_provider: projects/my-project-id/locations/global/workloadIdentityPools/my-pool-id/providers/my-provider-id
       - uses: r7kamura/google-docs-to-github@main
         with:
           google_drive_folder_id: 1zD5A9LcT1aHz5_R_eXvikWy1l7SGcjH_
