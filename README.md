@@ -57,7 +57,7 @@ GitHub branch name where files will be pushed.
 GitHub directory path where files will be pushed.
 
 - optional
-- default: `"output"`
+- default: `"google_docs"`
 
 ### `google_drive_folder_id`
 

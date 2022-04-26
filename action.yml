@@ -8,7 +8,7 @@ inputs:
   github_directory:
     description: GitHub directory path where files will be pushed.
     required: false
-    default: output
+    default: google_docs
   google_drive_folder_id:
     description: ID of the Google Drive folder to be exported.
     required: true

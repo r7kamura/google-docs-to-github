@@ -7,6 +7,10 @@
 - Add `inputs.github_branch`.
 - Add `inputs.github_directory`.
 
+### Changed
+
+- Change default `github_directory` from `output` to `google_docs`.
+
 ### Fixed
 
 - Avoid generating unnecessary `.nojekyll`.
