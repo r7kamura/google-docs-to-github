@@ -24,12 +24,13 @@ jobs:
       - uses: actions/checkout@v2
       - uses: r7kamura/google-docs-to-github@main
         with:
-          folder_id: 1zD5A9LcT1aHz5_R_eXvikWy1l7SGcjH_
+          google_drive_folder_id: 1zD5A9LcT1aHz5_R_eXvikWy1l7SGcjH_
 ```
 
 ## Inputs
 
-### `folder_id`
+### `google_drive_folder_id`
 
-- ID of the folder to be exported (included in the URL of the Google Drive folder).
+- ID of the Google Drive folder to be exported.
+    - You can get it from its URL by accessing the folder.
 - required

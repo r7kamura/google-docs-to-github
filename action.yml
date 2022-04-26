@@ -1,14 +1,14 @@
 name: google-docs-to-github
 description: Export Google Docs from Google Drive folder to your GitHub repository.
 inputs:
-  folder_id:
-    description: ID of the folder to be exported (included in the URL of the Google Drive folder).
+  google_drive_folder_id:
+    description: ID of the Google Drive folder to be exported.
     required: true
 runs:
   using: docker
   image: Dockerfile
   args:
-    - ${{ inputs.folder_id }}
+    - ${{ inputs.google_drive_folder_id }}
 branding:
   color: blue
   icon: download-cloud
