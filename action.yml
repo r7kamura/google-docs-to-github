@@ -8,7 +8,7 @@ runs:
   using: composite
   steps:
     - uses: actions/checkout@v2
-    - uses: ./.github/actions/google-docs-to-local
+    - uses: r7kamura/google-docs-to-local@main
       with:
         google_drive_folder_id: ${{ inputs.google_drive_folder_id }}
     - uses: peaceiris/actions-gh-pages@v3

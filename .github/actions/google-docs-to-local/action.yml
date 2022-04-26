@@ -1,9 +1,0 @@
-name: google-docs-to-local
-description: Export Google Docs from Google Drive to local file system.
-inputs:
-  google_drive_folder_id:
-    description: ID of the Google Drive folder to be exported.
-    required: true
-runs:
-  using: node16
-  main: dist/index.js
