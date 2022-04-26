@@ -52,6 +52,13 @@ GitHub branch name where files will be pushed.
 - optional
 - default: `"data"`
 
+### `github_directory`
+
+GitHub directory path where files will be pushed.
+
+- optional
+- default: `"output"`
+
 ### `google_drive_folder_id`
 
 ID of the Google Drive folder to be exported. Folder ID is contained in the trailing part of the folder's URL.

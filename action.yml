@@ -5,6 +5,10 @@ inputs:
     description: GitHub branch name where files will be pushed.
     required: false
     default: data
+  github_directory:
+    description: GitHub directory path where files will be pushed.
+    required: false
+    default: output
   google_drive_folder_id:
     description: ID of the Google Drive folder to be exported.
     required: true
@@ -16,6 +20,7 @@ runs:
         google_drive_folder_id: ${{ inputs.google_drive_folder_id }}
     - uses: peaceiris/actions-gh-pages@v3
       with:
+        destination_dir: ${{ inputs.github_directory }}
         github_token: ${{ github.token }}
         publish_branch: ${{ inputs.github_branch }}
         publish_dir: output
