@@ -59,6 +59,13 @@ GitHub directory path where files will be pushed.
 - optional
 - default: `"google_docs"`
 
+### `github_token`
+
+GitHub access token to push files.
+If you want to run other workflows automatically by pusing files, you need to pass a personal access token with `workflow` permission.
+
+- optional
+
 ### `google_drive_folder_id`
 
 ID of the Google Drive folder to be exported. Folder ID is contained in the trailing part of the folder's URL.

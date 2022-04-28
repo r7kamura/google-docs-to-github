@@ -9,6 +9,9 @@ inputs:
     description: GitHub directory path where files will be pushed.
     required: false
     default: google_docs
+  github_token:
+    description: GitHub access token to push files.
+    required: false
   google_drive_folder_id:
     description: ID of the Google Drive folder to be exported.
     required: true
@@ -22,7 +25,7 @@ runs:
       with:
         destination_dir: ${{ inputs.github_directory }}
         disable_nojekyll: true
-        github_token: ${{ github.token }}
+        github_token: ${{ inputs.github_token || github.token }}
         publish_branch: ${{ inputs.github_branch }}
         publish_dir: output
 branding:
