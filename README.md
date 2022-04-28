@@ -65,6 +65,7 @@ GitHub access token to push files.
 If you want to run other workflows automatically by pusing files, you need to pass a personal access token with `workflow` permission.
 
 - optional
+- default: Automatically generated token is used via `github.token`.
 
 ### `google_drive_folder_id`
 
