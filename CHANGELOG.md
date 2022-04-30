@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.0.0 - 2022-05-01
+
 ### Changed
 
 - Change r7kamura/google-docs-to-local versoin from v0 to v1.
