@@ -72,3 +72,8 @@ ID of the Google Drive folder to be exported. Folder ID is contained in the trai
 
 - required
 - example: `"1zD5A9LcT1aHz5_R_eXvikWy1l7SGcjH_"`
+
+## Related projects
+
+- https://github.com/r7kamura/google-docs-to-markdown
+- https://github.com/r7kamura/google-docs-to-local
