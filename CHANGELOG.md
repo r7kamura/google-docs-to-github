@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.0.0 - 2022-05-04
+
 ### Changed
 
 - Change output file format from JSON to Markdown.
