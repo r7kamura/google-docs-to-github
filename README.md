@@ -37,7 +37,7 @@ jobs:
         with:
           service_account: my-service-account-id@my-project-id.iam.gserviceaccount.com
           workload_identity_provider: projects/my-project-id/locations/global/workloadIdentityPools/my-pool-id/providers/my-provider-id
-      - uses: r7kamura/google-docs-to-github@v0
+      - uses: r7kamura/google-docs-to-github@v3
         with:
           google_drive_folder_id: 1zD5A9LcT1aHz5_R_eXvikWy1l7SGcjH_
 ```
