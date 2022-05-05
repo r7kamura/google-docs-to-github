@@ -21,7 +21,6 @@ runs:
     - uses: r7kamura/google-docs-to-markdown@v0
       with:
         google_drive_folder_id: ${{ inputs.google_drive_folder_id }}
-        output_directory: output
     - uses: peaceiris/actions-gh-pages@v3
       with:
         destination_dir: ${{ inputs.github_directory }}

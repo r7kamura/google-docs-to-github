@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Fixed
+
+- Remove unnecessary option for r7kamura/google-docs-to-markdown@v0.
+
 ## 3.0.0 - 2022-05-04
 
 ### Changed
